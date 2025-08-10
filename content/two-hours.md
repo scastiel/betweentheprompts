@@ -33,7 +33,7 @@ I was blown away.
 
 Cursor was able to deal with the complex codebase. I could tell it "take this file as an example," and the result was mostly okay. It was able to generate very relevant tests.
 
-The agent mode wasn't perfect—it sometimes made assumptions it shouldn't have. But instead of fixing the code myself, I explained why it was wrong and gave it more precise instructions. When I told it "You misunderstood, it should..." and provided clearer guidance, I was impressed at how it could understand the problem and update the code accordingly.
+The agent mode wasn't perfect—it sometimes made assumptions it shouldn't have. But instead of fixing the code myself, I explained why it was wrong and gave it more precise instructions[^1]. When I told it "You misunderstood, it should..." and provided clearer guidance, I was impressed at how it could understand the problem and update the code accordingly.
 
 ## Discovering New Craft Skills
 
@@ -62,3 +62,5 @@ So yes, I have absolutely no idea what my job will look like in five or ten year
 AI tools are so recent that anyone starting with them today could probably gain up-to-date skills in a matter of weeks. Looking back, it's not clear whether my initial skepticism was actually reasonable given what the tools were like earlier, or whether I was missing something important.
 
 What I do know is that I'm still very early in my journey of using AI tools, and I learn new things every day. The craft is evolving, and I'm evolving with it.
+
+[^1]: I was inspired by John Rush's post [Building a Personal AI Factory](https://www.john-rush.com/posts/ai-20250701.html)
