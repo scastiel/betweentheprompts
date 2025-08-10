@@ -1,0 +1,42 @@
+<style>
+  .signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background-color: var(--code-background-color);
+    padding: 16px 8px;
+    border-radius: 4px;
+    text-align: center;
+    margin-block: 24px;
+  }
+  .signup-form input {
+    font-family: inherit;
+    border: 1px solid #ccc;
+    padding: 4px;
+    border-radius: 4px;
+  }
+  .signup-form button {
+    font-family: inherit;
+    border: 1px solid #ccc;
+    padding: 4px;
+    border-radius: 4px;
+  }
+</style>
+<form
+  action="https://hakanai.io/campaign/4647c232-9869-4c43-8109-73c235f29cfb/subscribe"
+  method="get"
+  class="signup-form"
+>
+  <div>Get latest posts delivered right to your inbox:</div>
+  <div>
+    <input
+      name="email"
+      autocomplete="email"
+      type="email"
+      placeholder="Your email"
+      aria-label="Your email"
+      required
+    />
+    <button type="submit">Subscribe</button>
+  </div>
+</form>

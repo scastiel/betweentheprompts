@@ -10,3 +10,5 @@ Through hands-on experiments and honest observations, I explore what changes whe
 For practitioners who care about code quality, junior developers navigating AI-assisted workflows, and anyone curious about what programming looks like when the tools think alongside you.
 
 👋 _I'm Sebastien Castiel, a software engineer living in Montreal. I learn so much about AI tools these days that I can't resist sharing my journey!_
+
+{{< signup >}}
