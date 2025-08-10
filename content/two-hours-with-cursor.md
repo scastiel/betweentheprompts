@@ -1,5 +1,6 @@
 ---
 title: "Two hours with Cursor changed my mind about AI coding"
+slug: "two-hours"
 date: 2025-08-09
 draft: false
 ---
