@@ -1,7 +1,7 @@
 ---
-title: "Two hours with Cursor changed my mind about AI coding"
+title: "Two Hours with Cursor Changed My Mind About AI Coding"
 slug: "two-hours"
-date: 2025-08-09
+date: 2025-08-10
 draft: false
 ---
 
