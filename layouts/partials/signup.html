@@ -1,10 +1,12 @@
 <style>
   .signup-form {
+    width: fit-content;
     display: flex;
     flex-direction: column;
     gap: 8px;
     background-color: var(--code-background-color);
-    padding: 16px 8px;
+    padding: 16px 24px;
+    margin-inline: auto;
     border-radius: 4px;
     text-align: center;
     margin-block: 24px;
@@ -23,6 +25,13 @@
     background-color: var(--link-color);
     color: var(--background-color);
   }
+  .signup-form-input {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
 </style>
 <form
   action="https://hakanai.io/campaign/4647c232-9869-4c43-8109-73c235f29cfb/subscribe"
@@ -30,7 +39,7 @@
   class="signup-form"
 >
   <div>Get latest posts delivered right to your inbox:</div>
-  <div>
+  <div class="signup-form-input">
     <input
       name="email"
       autocomplete="email"
