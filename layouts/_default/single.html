@@ -1,0 +1,13 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+<p>
+  <i
+    >Published on
+    <time datetime='{{ .Date.Format "2006-01-02" }}'>
+      {{ .Date.Format (default "02 Jan, 2006" .Site.Params.dateFormat) }}
+    </time>
+  </i>
+</p>
+<content> {{ .Content }} </content>
+
+{{ partial "custom_single_footer.html" . }} {{ end }}

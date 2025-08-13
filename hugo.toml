@@ -2,8 +2,7 @@
 # Set to the URL for your site
 baseURL = "https://betweentheprompts.com"
 
-# The name of this wonderful theme ;-).
-theme = 'hugo-bearblog'
+# Theme files have been extracted directly into the project
 
 # Basic metadata configuration for your blog.
 title = "Between the Prompts"
