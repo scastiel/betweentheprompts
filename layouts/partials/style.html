@@ -132,6 +132,10 @@
 
   header {
     padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
   }
 
   footer {
@@ -225,5 +229,18 @@
   .blog-posts li {
     display: flex;
     flex-direction: column;
+  }
+
+  .language-list {
+    list-style-type: none;
+    padding: unset;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+
+  .language-list li:not(:first-child) {
+    border-left: 1px solid var(--text-color);
+    padding-left: 0.5rem;
   }
 </style>

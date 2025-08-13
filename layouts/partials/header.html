@@ -6,3 +6,9 @@
     <h2>{{ .Site.Title }}</h2>
   </a>
 </div>
+
+<ul class="language-list">
+{{ range $.Site.Home.AllTranslations }}
+<li><a href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a></li>
+{{ end }}
+</ul>
