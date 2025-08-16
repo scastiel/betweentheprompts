@@ -82,3 +82,6 @@ The site uses a monospace aesthetic with TailwindCSS utilities:
 - Uses Hugo's default permalink structure with slugs
 - Taxonomy features are disabled for simplicity
 - Supports syntax highlighting with "bw" (black & white) style
+
+## Git Workflow
+- Always use rebase, never merge

@@ -45,22 +45,48 @@
     class="font-mono text-xs md:text-sm mx-auto max-w-content text-left bg-white dark:bg-[#081d27] break-words leading-6 text-[#444] dark:text-[#ddd] flex min-h-screen flex-col"
   >
     <header class="p-4">
-      <div class="flex items-center gap-3 mb-2">
-        {{ if not .IsHome }}
-        <a
-          href="{{ .Site.BaseURL }}"
-          class="bg-transparent border-0 text-lg text-[#444] dark:text-[#ddd] p-2 -ml-2 -my-3 rounded transition-colors duration-200 hover:bg-code-light dark:hover:bg-code-dark hover:text-[#222] dark:hover:text-[#eee] hover:no-underline"
-          aria-label="Go back"
-          >←</a
-        >
-        {{ end }}
-        <a href='{{ "" | relURL }}' class="flex-1 hover:no-underline">
-          <h2
-            class="text-[1.5em] font-bold {{ if not .IsHome }} md:text-[1.2em]{{ end }} m-0"
+      <div class="flex items-baseline justify-between gap-3 mb-2">
+        <div class="flex items-center gap-3">
+          <a
+            href="{{ .Site.Home.RelPermalink }}"
+            class="hover:no-underline flex gap-2 items-baseline"
           >
-            {{ .Site.Title }}
-          </h2>
-        </a>
+            {{ if not .IsHome }}
+            <span
+              class="bg-transparent border-0 text-lg text-[#444] dark:text-[#ddd] p-2 -ml-2 -my-3 rounded transition-colors duration-200 hover:bg-code-light dark:hover:bg-code-dark hover:text-[#222] dark:hover:text-[#eee] hover:no-underline"
+              >←</span
+            >
+            {{ end }}
+            <h2
+              class="text-[1.5em] font-bold {{ if not .IsHome }} md:text-[1.2em]{{ end }} m-0"
+            >
+              {{ .Site.Title }}
+            </h2>
+          </a>
+        </div>
+
+        <!-- Language Navigation -->
+        {{ if hugo.IsMultilingual }}
+        <nav>
+          <ul class="flex gap-2 text-xs">
+            {{ range $.Page.AllTranslations }}
+            <li>
+              <a
+                href="{{ .RelPermalink }}"
+                class="px-2 py-1 rounded transition-colors duration-200 
+                      {{ if eq .Language.Lang $.Site.Language.Lang }}
+                        bg-code-light dark:bg-code-dark text-[#222] dark:text-[#eee]
+                      {{ else }}
+                        hover:bg-code-light dark:hover:bg-code-dark hover:text-[#222] dark:hover:text-[#eee] hover:no-underline
+                      {{ end }}"
+              >
+                {{ .Language.LanguageName }}
+              </a>
+            </li>
+            {{ end }}
+          </ul>
+        </nav>
+        {{ end }}
       </div>
     </header>
 
@@ -71,7 +97,20 @@
     </main>
 
     <footer class="pt-12 px-4 pb-4 text-center text-xs">
-      Made by
+      {{ if eq .Site.Language.Lang "fr" }} Créé par
+      <a href="https://scastiel.dev" target="_blank">Sebastien Castiel</a> (<a
+        href="https://github.com/scastiel"
+        target="_blank"
+        >GitHub</a
+      >,
+      <a href="https://linkedin.com/in/scastiel" target="_blank">LinkedIn</a
+      >).<br />
+      Contenu diffusé sous licence
+      <a
+        href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
+        target="_blank"
+        >Creative Commons BY-NC-SA</a
+      >. {{ else }} Made by
       <a href="https://scastiel.dev" target="_blank">Sebastien Castiel</a> (<a
         href="https://github.com/scastiel"
         target="_blank"
@@ -84,7 +123,7 @@
         href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
         target="_blank"
         >Creative Commons BY-NC-SA licence</a
-      >.
+      >. {{ end }}
     </footer>
   </body>
 </html>

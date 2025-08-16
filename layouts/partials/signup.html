@@ -4,23 +4,26 @@
   class="not-prose w-fit flex flex-col gap-2 bg-code-light dark:bg-code-dark py-4 px-6 mx-auto rounded text-center my-6"
 >
   <div class="text-balance">
-    Get latest posts delivered right to your inbox:
+    {{ if eq .Site.Language.Lang "fr" }} Recevez les derniers articles
+    directement dans votre boîte mail : {{ else }} Get latest posts delivered
+    right to your inbox: {{ end }}
   </div>
   <div class="flex flex-wrap items-center justify-center gap-2">
-    <input
-      name="email"
-      autocomplete="email"
-      type="email"
-      placeholder="Your email"
-      aria-label="Your email"
-      required
-      class="font-mono border border-gray-300 dark:border-gray-600 p-1 rounded bg-white dark:bg-gray-800 text-[#444] dark:text-[#ddd]"
-    />
+    <input name="email" autocomplete="email" type="email" placeholder="{{ if eq
+    .Site.Language.Lang "fr" }}Votre email{{ else }}Your email{{ end }}"
+    aria-label="{{ if eq .Site.Language.Lang "fr" }}Votre email{{ else }}Your
+    email{{ end }}" required class="font-mono border border-gray-300
+    dark:border-gray-600 p-1 rounded bg-white dark:bg-gray-800 text-[#444]
+    dark:text-[#ddd]" />
     <button
       type="submit"
       class="font-mono border-0 py-1 px-2 rounded bg-link dark:bg-link-dark text-white dark:text-[#081d27]"
     >
-      Subscribe
+      {{ if eq .Site.Language.Lang "fr" }}S'abonner{{ else }}Subscribe{{ end }}
     </button>
+  </div>
+  <div class="text-balance">
+    {{ if eq .Site.Language.Lang "fr" }} (En anglais uniquement pour le moment)
+    {{ end }}
   </div>
 </form>
