@@ -19,9 +19,15 @@ For these reasons, I started experimenting with an approach I'd heard about: ask
 
 My first prompt is usually to give Claude Code a description of the feature it should implement (or bug it should fix, or the refactoring it should do) with all the details I have in mind. If I already have an idea of the implementation, I can give it some pointers to existing files for reference. However, I try not to give it too many implementation instructions because I want it to make suggestions and contribute to the design process.
 
+> I want to implement a query builder. The page will be displayed as two columns. In the first one, a first box will let the user select a view (for now only one view: "Volume Metrics"), a second box to select fields ("field 1", "field 2", "field 3"), and a third one to add filters (don't fill it yet). The right column will display first the query as human readable, then a table with the query results. (to be continued)
+
 I also try to refer to existing plans for features implemented previously. I don't have a formal template, but I don't really need one as long as I have other plans to reference as examples.
 
+> (continuing) Check out the previous plan in @plans/chat-playground.md to know about routing and architecture details. (to be continued)
+
 I expect to see several key elements in the document. First, a rephrasing of the feature description I gave it, which helps ensure we're aligned on requirements. Second, details on how the feature will be implemented—usually it includes some pieces of code or pseudo-code without me having to tell it to do so. Finally, commands to run to make sure the code quality is acceptable, including type checking, linting, and tests.
+
+> (continuing) Write a plan in @plans/query-builder.md, and let me validate it before starting the implementation.
 
 ## The Collaborative Design Process
 
