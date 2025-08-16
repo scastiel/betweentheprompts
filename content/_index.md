@@ -19,7 +19,7 @@ This blog is for practitioners who care about code quality, junior developers na
 
 ---
 
-### Is anything here AI-generated?
+## Is anything here AI-generated?
 
 I use AI for this blog way less than I use it for my code.
 

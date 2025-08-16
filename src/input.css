@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Typography styles */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-mono text-[#222] dark:text-[#eee];
+  }
+  
+  h1 {
+    @apply leading-tight;
+  }
+
+  .prose h2 {
+    @apply !font-bold;
+  }
+  
+  a {
+    @apply text-link dark:text-link-dark cursor-pointer no-underline;
+  }
+  
+  a:hover {
+    @apply underline;
+  }
+  
+  button {
+    @apply m-0 cursor-pointer;
+  }
+  
+  hr {
+    @apply border-0 border-t border-hr my-6;
+  }
+  
+  code {
+    @apply font-mono px-0.5 bg-code-light dark:bg-code-dark text-[#222] dark:text-[#ddd] rounded;
+  }
+  
+  blockquote {
+    @apply border-l border-quote text-[#222] dark:text-[#ccc] pl-5 italic;
+  }
+}
+
+@layer components {
+  .highlight, .code {
+    @apply text-[#222] dark:text-[#ddd] my-4 rounded-none p-0 overflow-x-auto;
+  }
+  
+  .highlight pre {
+    @apply w-fit rounded p-4 m-0 bg-code-light dark:bg-code-dark min-w-full;
+  }
+  
+  .highlight code {
+    @apply p-0;
+  }
+}

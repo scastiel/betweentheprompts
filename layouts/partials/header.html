@@ -1,8 +1,0 @@
-<div class="header-nav{{ if not .IsHome }} not-home{{ end }}">
-  {{ if not .IsHome }}
-  <a href="{{ .Site.BaseURL }}" class="back-button" aria-label="Go back">←</a>
-  {{ end }}
-  <a href="{{ "" | relURL }}" class="title">
-    <h2>{{ .Site.Title }}</h2>
-  </a>
-</div>

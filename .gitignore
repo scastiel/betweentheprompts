@@ -1,3 +1,6 @@
 public
 resources
 .trees
+node_modules
+static/css/style.css
+.playwright-mcp

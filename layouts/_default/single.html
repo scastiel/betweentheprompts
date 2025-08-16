@@ -1,13 +1,16 @@
 {{ define "main" }}
-<h1>{{ .Title }}</h1>
+<h1 class="leading-tight font-bold">{{ .Title }}</h1>
 <p>
   <i
     >Published on
-    <time datetime='{{ .Date.Format "2006-01-02" }}'>
+    <time
+      datetime='{{ .Date.Format "2006-01-02" }}'
+      class="italic text-[0.8rem]"
+    >
       {{ .Date.Format (default "02 Jan, 2006" .Site.Params.dateFormat) }}
     </time>
   </i>
 </p>
 <content> {{ .Content }} </content>
 
-{{ partial "custom_single_footer.html" . }} {{ end }}
+{{ partial "signup.html" . }} {{end}}

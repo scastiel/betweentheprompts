@@ -1,45 +1,12 @@
-<style>
-  .signup-form {
-    width: fit-content;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    background-color: var(--code-background-color);
-    padding: 16px 24px;
-    margin-inline: auto;
-    border-radius: 4px;
-    text-align: center;
-    margin-block: 24px;
-  }
-  .signup-form input {
-    font-family: inherit;
-    border: 1px solid #ccc;
-    padding: 4px;
-    border-radius: 4px;
-  }
-  .signup-form button {
-    font-family: inherit;
-    border-width: 0px;
-    padding: 4px 8px;
-    border-radius: 4px;
-    background-color: var(--link-color);
-    color: var(--background-color);
-  }
-  .signup-form-input {
-    flex-wrap: wrap;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-  }
-</style>
 <form
   action="https://hakanai.io/campaign/4647c232-9869-4c43-8109-73c235f29cfb/subscribe"
   method="get"
-  class="signup-form"
+  class="not-prose w-fit flex flex-col gap-2 bg-code-light dark:bg-code-dark py-4 px-6 mx-auto rounded text-center my-6"
 >
-  <div>Get latest posts delivered right to your inbox:</div>
-  <div class="signup-form-input">
+  <div class="text-balance">
+    Get latest posts delivered right to your inbox:
+  </div>
+  <div class="flex flex-wrap items-center justify-center gap-2">
     <input
       name="email"
       autocomplete="email"
@@ -47,7 +14,13 @@
       placeholder="Your email"
       aria-label="Your email"
       required
+      class="font-mono border border-gray-300 dark:border-gray-600 p-1 rounded bg-white dark:bg-gray-800 text-[#444] dark:text-[#ddd]"
     />
-    <button type="submit">Subscribe</button>
+    <button
+      type="submit"
+      class="font-mono border-0 py-1 px-2 rounded bg-link dark:bg-link-dark text-white dark:text-[#081d27]"
+    >
+      Subscribe
+    </button>
   </div>
 </form>

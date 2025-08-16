@@ -1,12 +1,19 @@
-<ul class="blog-posts">
+<ul class="not-prose list-none p-0 flex flex-col gap-2">
   {{ range .Site.RegularPages }}
-  <li>
-    <time datetime='{{ .Date.Format "2006-01-02" }}'>
+  <li class="flex flex-col">
+    <time
+      datetime='{{ .Date.Format "2006-01-02" }}'
+      class="italic text-[0.8rem]"
+    >
       {{ .Date.Format (default "02 Jan, 2006" .Site.Params.dateFormat) }}
     </time>
-    <a href="{{ .Permalink }}">{{ .Title }}</a>
+    <a
+      href="{{ .Permalink }}"
+      class="text-link dark:text-link-dark no-underline hover:underline"
+      >{{ .Title }}</a
+    >
   </li>
   {{ else }}
-  <li>No posts yet</li>
+  <li class="flex flex-col">No posts yet</li>
   {{ end }}
 </ul>
