@@ -6,7 +6,7 @@
     "build-css": "tailwindcss -i ./src/input.css -o ./static/css/style.css --watch",
     "build-css-prod": "tailwindcss -i ./src/input.css -o ./static/css/style.css --minify",
     "dev": "concurrently \"npm run build-css\" \"hugo server --disableFastRender\"",
-    "build": "npm run build-css-prod && hugo"
+    "build": "npm run build-css-prod && hugo --gc --minify"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.16",
