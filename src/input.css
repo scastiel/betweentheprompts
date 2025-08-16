@@ -36,8 +36,13 @@
     @apply font-mono px-0.5 bg-code-light dark:bg-code-dark text-[#222] dark:text-[#ddd] rounded;
   }
   
-  blockquote {
-    @apply border-l border-quote text-[#222] dark:text-[#ccc] pl-5 italic;
+  .prose blockquote {
+    @apply opacity-70 bg-code-light dark:bg-code-dark py-1 !px-4;
+  }
+
+  .prose :where(blockquote p:first-of-type)::before,
+  .prose :where(blockquote p:last-of-type)::after {
+    @apply hidden;
   }
 }
 

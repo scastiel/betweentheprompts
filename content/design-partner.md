@@ -31,7 +31,11 @@ I expect to see several key elements in the document. First, a rephrasing of the
 
 ## The Collaborative Design Process
 
-Sometimes I'm not satisfied with the suggested implementation, so I tell it why it's wrong. After a few back-and-forth exchanges, I often realize the first suggestion was actually the right one. This process is much more efficient than if I had started writing the code by myself and realized my approach was wrong later.
+Sometimes, I'm not satisfied with the suggested implementation. In this case, instead of updating the plan, I tell it why it's wrong, expecting it to change its approach.
+
+> The page should be a subroute of /explore, not /review. Also, it should be accessible only to users with the "admin" role.
+
+It also happens that after a few back-and-forth exchanges, I realize the first suggested approach was better than the one I had in mind. This process is much more efficient than if I had started writing the code by myself and realized my approach was wrong later.
 
 It's a bit like discussing the plan with a colleague each time I'm about to start a new feature. More specifically, it's like challenging my implementation plan with a junior colleague (or one who doesn't know the codebase as well) who will question my choices. The dynamic reminds me of the rubber duck debugging technique, where explaining your approach helps you think through problems. However, it won't suggest a radically different approach unless I specifically ask it to, which I have never tried.
 
@@ -43,7 +47,11 @@ The key insight is that I don't just ask Claude Code to write the plan—I also 
 
 I've developed the habit of asking it to check that the plan is up to date each time it commits code, treating plan updates the same way as running quality checks.
 
+> Make sure the plan is up to date, and commit changes.
+
 This living document approach solves a fundamental problem with AI development: context limits. With an up-to-date plan document, I can start a fresh conversation and simply ask Claude Code to continue the implementation. This usually works great—just the document is usually enough context for a new session to pick up exactly where the previous one left off.
+
+> Continue the implementation documented in @plans/query-builder.md.
 
 ## My Review Process
 
