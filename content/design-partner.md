@@ -1,8 +1,8 @@
 ---
 title: "Turning Claude Code Into My Best Design Partner"
 slug: "design-partner"
-date: 2025-08-12
-draft: true
+date: 2025-08-18
+draft: false
 ---
 
 When I first started using Claude Code, I had a naive approach to working with it. I would describe the task directly in the prompt, press Enter, and cross my fingers. If the agent made mistakes, I would tell it how to fix them. For small tasks, this can be good enough, but as the task grows in complexity, this approach reveals several significant drawbacks.
