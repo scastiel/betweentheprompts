@@ -29,7 +29,19 @@
 
     <meta name="referrer" content="no-referrer-when-downgrade" />
 
-    {{ with .OutputFormats.Get "rss" -}} {{ printf `
+    <!-- Hreflang annotations for multilingual content -->
+    {{ if hugo.IsMultilingual }} {{ range $.Page.AllTranslations }}
+    <link
+      rel="alternate"
+      hreflang="{{ .Language.Lang }}"
+      href="{{ .Permalink }}"
+    />
+    {{ end }}
+    <!-- x-default points to the primary language (English) -->
+    {{ range $.Page.AllTranslations }} {{ if eq .Language.Lang "en" }}
+    <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />
+    {{ end }} {{ end }} {{ end }} {{ with .OutputFormats.Get "rss" -}} {{ printf
+    `
     <link rel="%s" type="%s" href="%s" title="%s" />
     ` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }} {{ end -}}
     <link rel="stylesheet" href="{{ "css/style.css" | relURL }}" />
@@ -56,12 +68,15 @@
               class="bg-transparent border-0 text-lg text-[#444] dark:text-[#ddd] p-2 -ml-2 -my-3 rounded transition-colors duration-200 hover:bg-code-light dark:hover:bg-code-dark hover:text-[#222] dark:hover:text-[#eee] hover:no-underline"
               >←</span
             >
-            {{ end }}
-            <h2
-              class="text-[1.5em] font-bold {{ if not .IsHome }} md:text-[1.2em]{{ end }} m-0"
+            {{ end }} {{ if .IsHome }}
+            <h1 class="text-[1.5em] font-bold m-0">{{ .Site.Title }}</h1>
+            {{ else }}
+            <div
+              class="text-[1.5em] font-bold md:text-[1.2em] m-0 text-[#222] dark:text-[#eee]"
             >
               {{ .Site.Title }}
-            </h2>
+            </div>
+            {{ end }}
           </a>
         </div>
 
