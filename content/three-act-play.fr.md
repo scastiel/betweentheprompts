@@ -1,7 +1,7 @@
 ---
 title: "Développement assisté par IA : une pièce en trois actes"
 slug: "piece-trois-actes"
-date: 2025-08-25
+date: 2025-08-24
 ---
 
 Les développeurs de mon équipe utilisent la fonction Tab de Cursor. Les designers utilisent des prototypes en Vibe Coding pour recueillir les retours des _stakeholders_. De mon côté, je m'appuie sur Claude Code pour planifier et construire des fonctionnalités plus conséquentes. Même technologie IA, approches complètement différentes.

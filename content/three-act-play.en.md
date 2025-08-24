@@ -1,7 +1,7 @@
 ---
 title: "AI-Assisted Development: A Three-Act Play"
 slug: "three-act-play"
-date: 2025-08-25
+date: 2025-08-24
 ---
 
 Developers on my team use Cursor's Tab feature. Designers use vibe-coded prototypes to gather feedback from stakeholders. I rely on Claude Code to plan and build larger features. Same AI technology, completely different approaches.
