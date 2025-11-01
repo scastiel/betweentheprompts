@@ -31,6 +31,14 @@ The documentation felt delightfully meta. I asked my AI assistant to draft the R
 
 Once the groundwork was laid, the payoff was immediate. I added new features with AI support, and it felt straightforward. The pattern repeated with the MCP server: once the architecture was in place, it was easy to add new tools. That case was even more striking—no extra documentation needed. AI assistants were able to take existing tools as examples and add new ones. Pattern matching at its finest.
 
+Once the abstractions were in place, the prompts themselves became simple:
+
+> Add copilot features to this page. The goal of this page is to update user information: first name, last name, and email address. After filling information, the user can save it. The copilot should be able to update the first name, last name, and email address, then save the information. When provided only an email address, the copilot should guess the first and last names if they're included in the address.
+
+And on the MCP side:
+
+> Add a tool to the MCP server that will be used to update user information. It should offer the same features as the `updateUser` tRPC procedure. Add unit tests as well.
+
 ## Engineering for Mixed Intelligence
 
 Our role as software engineers now includes helping AI assistants use our code efficiently. It's not just about big platform features, but also about daily choices—skipping clever abstractions when they make things harder for an assistant to follow.
