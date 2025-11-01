@@ -1,13 +1,13 @@
 ---
-title: "The Paradox of AI-Ready Architecture"
-slug: "ai-ready-architecture"
+title: "Designing AI‑Ready Systems: Make Code Easy for Assistants"
+slug: "ai-ready-systems"
 date: 2025-10-31
 draft: true
 ---
 
-I realized recently that while many of my daily developer tasks don't involve AI coding, they often lay the groundwork for using AI in future features.
+Most leverage from AI doesn't come from writing AI code—it comes from writing code that AI can use. When your system exposes clear contracts and examples, assistants can extend it safely.
 
-Last month, I spent several days implementing a copilot feature for our app at work—a system where each page registers actions and context a chatbot can rely on. The irony wasn't lost on me: I was building infrastructure to help AI assist our users, yet I barely used AI assistance myself. It eventually clicked that the work was making life easier not just for other teams, but also for AI assistants.
+Building a copilot and an MCP server at my job made this obvious: after we added a contract API and short, focused docs, "write-a-prompt" replaced "write-a-spec" for many changes. Here's why that works and the patterns that made it repeatable.
 
 ## The Complexity Boundary
 
