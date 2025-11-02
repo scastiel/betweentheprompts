@@ -17,7 +17,7 @@ It needed some architecture work first, and I couldn't describe the vision clear
 
 The same pattern emerged when we implemented an MCP server for one of our microservices. We handled most of it without AI, because we were sorting out authentication, architecture, and test infrastructure. The ambiguity in the problem definition and the need for a coherent vision across multiple moving parts resisted AI help—not because it was technically impossible, but because it required holding an abstract mental model that's hard to articulate.
 
-It reminded me that I still enjoy software engineering. There's something satisfying about wrestling with these architectural challenges and building the conceptual framework that makes everything else possible.
+It reminded me why I still enjoy software engineering: there's something satisfying about wrestling with these architectural challenges and building the conceptual framework that makes everything else possible.
 
 ## The Convergence Principle
 
@@ -45,8 +45,12 @@ Our role as software engineers now includes helping AI assistants use our code e
 
 We haven't set any formal practices around this in my team, and I haven't heard of others doing it explicitly. Still, it feels like something that could become a design habit. Should "AI consumability" sit alongside maintainability and performance as a design principle?
 
-There's a multiplier effect at work. The framework I built makes it easy for teams to extend the copilot, which in turn lets their features be AI-assistable for end users, while also making the implementation itself AI-assistable for developers. Good engineering decisions ripple through multiple layers of AI interaction.
-
 The human role evolves but stays essential. We're becoming architects of possibility, creating the conceptual frameworks that make code writable by others—human or machine. There's a different kind of satisfaction now: knowing your work will help others, whether humans or AIs, move faster. We're building tools for toolmakers, regardless of species.
 
-The boundary between human and AI work isn't disappearing—it's getting clearer. Complex architectural challenges that require vision and judgment remain in human territory. But once we lay that foundation with clear contracts and solid abstractions, we end up creating the perfect environment for AI to thrive. We didn't set out to build AI-friendly systems; we set out to build good systems. It turns out they're the same thing.
+The boundary between human and AI work isn't disappearing—it's getting clearer. Complex architectural challenges that require vision and judgment remain in human territory. But once we lay that foundation with clear contracts and solid abstractions, we end up creating the perfect environment for AI to thrive.
+
+We didn't set out to build AI-friendly systems.
+
+We set out to build good systems.
+
+It turns out they're the same thing.
