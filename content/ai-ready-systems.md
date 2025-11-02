@@ -1,8 +1,7 @@
 ---
-title: "Designing AI‑Ready Systems: Make Code Easy for Assistants"
+title: "Designing AI‑Ready Systems: Making Code Easy for Assistants"
 slug: "ai-ready-systems"
-date: 2025-10-31
-draft: true
+date: 2025-11-02
 ---
 
 Most leverage from AI doesn't come from writing AI code—it comes from writing code that AI can use. When your system exposes clear contracts and examples, assistants can extend it safely.
