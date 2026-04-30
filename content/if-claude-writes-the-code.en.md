@@ -1,6 +1,6 @@
 ---
 title: "If Claude Writes the Code, What Makes Me Still a Developer?"
-slug: "not-the-same-job"
+slug: "if-claude-writes-the-code"
 date: 2026-04-30
 ---
 
@@ -70,7 +70,7 @@ No magic recipe. But this is where you realize the debugging skills you built ov
 
 Code review is another unsolved problem. Our velocity is too high for every PR to get a human review. I don't always master 100% of the code in my PRs — I haven't written it. I used to read all the LLM-generated code to make it my own. Increasingly, I've stopped. I treat code written by Claude the way I'd treat code from a colleague: I want the high-level picture, not every implementation detail. We're building review skills specific to our codebase, extracting our colleagues' review processes so Claude can catch issues before a PR even goes out.
 
-If we want to maintain the quality of our code, I think we'll still need some human review. But it can't stay at the PR level. Maybe architecture reviews at the end of a project. I don't have answers yet — that's probably another post.
+Today, the risk is manageable. All our features ship behind feature flags, so the blast radius of a mistake is limited. And we still know the codebase extremely well — we're good at spotting risky code, and we know which practices to enforce to maintain quality. But long-term, I see the tension: the more AI-written code accumulates, the more control we could lose over overall codebase quality. That's why we keep investing in better skills and guidelines — it's not a problem you solve once, it's one you have to keep up with. Probably another post in itself.
 
 And then there's the future. My job changed dramatically in the past year, but most of that change landed in the last three months. What it looks like a year from now? No idea. Any new model could reshuffle everything. Exciting and FUD at the same time.
 
@@ -80,7 +80,7 @@ So what makes me a developer if I don't write code?
 
 Tough question. For my entire career, I heard — and even said, a lot — that being a developer wasn't mostly about writing code. It was about solving problems, hearing requirements, making compromises, presenting solutions, working as a team.
 
-Turns out it was true the whole time.
+Turns out it was true the whole time. At least, that's what I believe today. I'm also aware I'm saying this mid-transition — three months into a shift that's still accelerating. I might read this post in a year and think I was naive about what was coming next.
 
 ---
 
